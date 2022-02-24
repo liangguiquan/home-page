@@ -1,0 +1,61 @@
+// 覆盖/修改element-ui的默认样式
+
+@import './var.less';
+
+// #settingPanel-container span.el-color-picker__color-inner{
+//     border-radius: 10px !important;
+//     background-color: red;
+//   }
+
+// el-switch
+.settingPanel-container .el-switch {
+    .el-switch__core {
+        width: 30px !important;
+        height: 16px !important;
+
+        &::after {
+            width: 12px !important;
+            height: 12px !important;
+            // margin-left: -13px;
+        }
+    }
+    &.is-checked .el-switch__core::after{
+        margin-left: -13px;
+    }
+
+}
+
+.settingPanel-container .el-color-picker{
+    .el-color-picker__trigger{
+        border: none;
+        border-radius: 50%;
+        .el-color-picker__color {
+            border-radius: 50%;
+            .el-color-picker__color-inner {
+            border-radius: 50%;
+            }
+        }
+    }
+}
+.settingPanel-container .el-collapse-item__header {
+    font-weight: 700;
+  }
+
+
+  .settingPanel-container .el-slider {
+      width: 210px;
+      .el-slider__runway{
+        height: 4px;
+        .el-slider__bar{
+            height: 4px;
+            background-color: @primary;
+        }
+        .el-slider__button-wrapper {
+            .el-slider__button {
+                width: 12px;
+                height: 12px;
+                border: 2px solid @primary;
+            }
+        }
+      }
+  }

@@ -1,25 +1,21 @@
 {
   "name": "slyn-page",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "element-ui": "^2.15.6",
+    "less-loader": "^5.0.0",
+    "less": "^3.0.4",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11",
-    "vuex": "^3.4.0"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-vuex": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+  "author": "",
+  "license": "ISC"
 }

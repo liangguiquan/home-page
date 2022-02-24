@@ -1,0 +1,33 @@
+@import './var.less';
+@import './override-element-ui.less';
+
+html {
+    color: @words;
+    font-family: "-apple-system", "BlinkMacSystemFont", "Roboto", "Helvetica Neue", Helvetica, Arial, "微软雅黑", sans-serif;
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        color: @primary;
+    }
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p, span {
+    margin: 0;
+    padding: 0;
+}
